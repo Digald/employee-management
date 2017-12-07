@@ -28,8 +28,9 @@
   database.ref().push({
     name: name,
     role: role,
-    start: startDate,
-    rate: monthlyRate
+    startDate: start,
+    monthlyRate: rate,
+    dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
 
 });
